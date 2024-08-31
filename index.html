@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Brasileiro</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/global.css">
+</head>
+
+<body>
+   
+    <header>
+        <nav>
+            <ul>
+                <li><a href="cardapio.html">Menu</a></li>
+                <li><a href="#order">Pedidos Online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bem-vindo ao Sabor Brasileiro</h1>
+        <p>Experimente o melhor da culinária brasileira!</p>
+    </section>
+
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>O Sabor Brasileiro é um restaurante dedicado a trazer o autêntico sabor do Brasil para você.</p>
+        <p>A nossa história começa em 1998, quando um garçom chamado João decidiu transformar o bairro em um restaurante.</p>
+        <p>Nosso objetivo é garantir que você encontre a melhor cozinha brasileira online.</p>
+        <p>Nosso cardápio é composto por um mix de pratos típicos do Brasil, com ingredientes deliciosos e saborosos.</p>
+        <p>Nossa equipe é composta por profissionais experientes e com um grande conhecimento da gastronomia brasileira.</p>
+        <p>Nossa missão é proporcionar a melhor cozinha brasileira à todos os interessados.</p>
+       <strong> <p>Nosso endereço: Rua dos Bandeirantes, 1234 - São Paulo - SP</p>
+        <p>Horário de Funcionamento: Segunda à Sexta, 10:00 às 22:00</p></strong>
+        <p>Entre em contato com nossa equipe para saber mais sobre nossos pratos e ofertas.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Email: contato@saborbrasileiro.com</p>
+        <p>Telefone: (21) 1234-5678</p>
+    </section>
+
+    <section id="order">
+        <h2>Faça seu Pedido Online</h2>
+        <form action="submit_order.php" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="order">Pedido:</label>
+            <textarea id="order" name="order" required></textarea>
+            <label for="pagamento">Forma de pagamento:</label>
+            <div class="pagamento">
+            <select name="pagamento" id="pagamento">
+                <option value="1">Pix</option>
+                <option value="2">Dinheiro</option>
+                <option value="3">Cartão</option>
+            </select>
+            </div>
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    
+</body>
+
+</html>
